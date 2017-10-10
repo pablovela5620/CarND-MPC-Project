@@ -29,6 +29,18 @@ Below are the model's actuation, constraint, cost functions.
 
 ![Cost](https://latex.codecogs.com/gif.latex?J%20%3D%20%5Csum_%7Bt%3D1%7D%5E%7BN%7D%5Cleft%20%28%20cte_%7Bt%7D%20-%20cte_ref%20%5Cright%20%29%5E%7B2%7D&plus;%5Cleft%20%28%20e%5Cpsi%20_%7Bt%7D%20-%20e%5Cpsi%20ref%5Cright%20%29%5E%7B2%7D%20&plus;...)
 
+## Timestep Length and Elapsed Duration
+
+For this project I have chosen N = 10 (timestep length) and dt = 0.15 (elapsed duration between time steps). The choice of N and dt is based around
+the duration the optimizer considers. So with these chosen values the optimizer is looking at a total time duration of 1.5 seconds. I had previously
+chosen values of N = 10 and dt = .10 but this would cause the car to veer of course at high speeds because it didnt look far enough into the chosen path
+
+## MPC Preprocessing and Latency
+
+To simplify the controller before feeding in points into the solver, the x and y as well as the cars psi angle were shifted to its own coordinate system so 
+that the polyfit equation would have an easier time, such as avoiding having to fit to a potentially vertical function and having
+the position be at the origin (0,0). The simulator allows for latency to be added to the problem thus in this case a latency of 100ms was used.
+This was dealt with by changing what the cars x, y, psi, and v where to what they should be 100ms in the future (lines 107- 111)
 
 
 ## Dependencies
