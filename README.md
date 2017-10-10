@@ -2,6 +2,11 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+Video of Model Predictive Controller in action
+
+[![Project Video](https://img.youtube.com/vi/OSmgWdpi8_0/0.jpg)](https://www.youtube.com/watch?v=OSmgWdpi8_0&feature=youtu.be)
+
+
 ## Model Description and Details
 Below are the model's actuation, constraint, cost functions.
 
