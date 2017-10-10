@@ -2,6 +2,23 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+## Model Description and Details
+Below are the model's actuation, constraint, cost functions.
+
+####Model
+
+![Model_1](https://latex.codecogs.com/gif.latex?x_%7Bt&plus;1%7D%3Dx_%7Bt%7D&plus;v_%7Bt%7D%20%5Cast%20%5Ccos%20%5Cleft%20%28%20%5Cpsi%20_%7Bt%7D%20%5Cright%20%29%5Cast%20dt)
+
+![Model_2](https://latex.codecogs.com/gif.latex?y_%7Bt&plus;1%7D%3Dy_%7Bt%7D&plus;v_%7Bt%7D%20%5Cast%20%5Csin%20%5Cleft%20%28%20%5Cpsi%20_%7Bt%7D%20%5Cright%20%29%5Cast%20dt)
+
+![Model_3](https://latex.codecogs.com/gif.latex?%5Cpsi_%7Bt&plus;1%7D%3D%5Cpsi_%7Bt%7D&plus;%5Cfrac%7Bv_%7Bt%7D%7D%7BL_%7Bf%7D%7D%5Cast%20%5Cdelta%20_%7Bt%7D%5Cast%20dt)
+
+![Model_4](https://latex.codecogs.com/gif.latex?v_%7Bt&plus;1%7D%3Dv_%7Bt%7D&plus;a_%7Bt%7D%20%5Cast%20dt)
+
+![Model_5](https://latex.codecogs.com/gif.latex?cte_%7Bt&plus;1%7D%3Df%5Cleft%20%28%20x_%7Bt%7D%20%5Cright%20%29-y_%7Bt%7D&plus;v_%7Bt%7D%20%5Cast%20%5Csin%5Cleft%20%28%20e%5Cpsi%20_%7Bt%7D%20%5Cright%20%29%5Cast%20dt)
+
+![Model_6](https://latex.codecogs.com/gif.latex?e%5Cpsi_%7Bt&plus;1%7D%20%3D%20%5Cpsi%20-%20%5Cpsi%20des_%7Bt&plus;1%7D%20&plus;%20%5Cfrac%7Bv_%7Bt%7D%7D%7BL_%7Bf%7D%7D%5Cast%20%5Cdelta%20_%7Bt%7D%5Cast%20dt)
+
 
 ## Dependencies
 
